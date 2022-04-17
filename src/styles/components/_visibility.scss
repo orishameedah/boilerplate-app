@@ -1,0 +1,14 @@
+.show-for-mobile {
+    //when the width is <= 720px or 45rem it should not display expenses
+    @media (min-width: $desktop-breakpoint) { //which is showing for mobile view
+        display: none;
+    }
+}
+
+.show-for-desktop { //shoing for the laptop desktop and bigger screen size view
+    //when the width is >= 720px or 45rem it should display expense and amount
+    @media (max-width: $desktop-breakpoint - 0.01rem) { //0.01rem means both max-width and min-width never meet
+        display: none;
+    }
+}
+
